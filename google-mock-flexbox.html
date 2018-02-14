@@ -15,7 +15,6 @@
                 margin: 0;
                 padding: 0;
                 box-sizing: border-box;
-                text-align: center;
                 height: 100%;
             }
             a { 
@@ -29,14 +28,13 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
-                height: 100%;
+                height: calc(100vh - 50px);
             }
 
             header {
                 display: flex;
                 border: 1px #eee solid;
-                flex-grow: 1;
-                padding: 5px 0;
+                padding: 0;
                 justify-content: space-between;
             }
             .left-links ul, .right-links ul {
@@ -50,15 +48,17 @@
                 margin: 0 1rem;
             }
 
+            .left-links ul li a, .right-links ul li a {
+                color: #555;
+            }
+
             .middle {
                 display: flex;
                 border: 1px #eee solid;
-                flex-grow: 2;
-                height: 100%;
+                justify-content: center;
                 flex-direction: column;
                 text-align: center;
-                align-items: center;
-                align-content: center;
+                flex: 1 1;
             }
 
             .footer {
@@ -67,15 +67,17 @@
                 flex-grow: 1;
                 padding: 5px 0;
                 justify-content: space-between;
+                background: #eee;
+                border-top: 1px #ddd solid;
             }
 
             .main {
                 display: flex;
                 flex-direction: column;
+                justify-content: center;
             }
 
             .logo {
-                padding: 42px 0 14px;
                 font-family: Montserrat;
                 font-size: 2rem;
                 font-size: 4.9rem;
@@ -100,7 +102,7 @@
                 border: 1px solid #ccc;
                 height: 2em;
                 width: 512px;
-                margin: 30px 0 -10px calc(50% - 362px);
+                margin: 30px auto -10px;;
                 display: inline-block;
                 position: relative;
             }
@@ -118,14 +120,26 @@
             .buttons {
                 height: 25px;
                 width: 300px;
-                margin: auto;
+                margin: 30px auto 24px;
+                display: flex;
+                justify-content: center;
+                align-content: space-between;
             }
 
             .buttons button {
                 height: 30px;
                 width: 140px;
-                font-size: .9rem;
+                font-size: .8rem;
                 margin: 2px;
+                border: 0;
+                background: #eee;
+                color: #666;
+                font-weight: bold;
+            }
+
+            .buttons button:hover {
+                border: 1px #ddd solid;
+                box-shadow: 1px 1px 3px #00000011;
             }
             
         </style>
@@ -166,14 +180,14 @@
         <div class="footer">
             <div class="left-links">
             <ul>
-                <a href="#"><li>Advertising Programs</li></a>
-                <a href="#"><li>Business</li></a>
+                    <li><a href="#">Advertising Programs</a></li>
+                <li><a href="#">Business</a></li>
             </ul>
         </div>
         <div class="right-links">
             <ul>
-                <a href="#"><li>+Google</li></a>
-                <a href="#"><li>About Google</li></a>
+                <li><a href="#">+Google</a></li>
+                <li><a href="#"></a>About Google</a></li>
             </ul>
             </div>
         
