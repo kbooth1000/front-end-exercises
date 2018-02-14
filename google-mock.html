@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,800|Roboto" rel="stylesheet">        
+            <title>Google (mock)</title>
+        <style>
+        html { 
+            font-family: Montserrat;
+            }
+            body {
+                background:#fff;
+                margin: 0;
+                padding: 10px;
+                box-sizing: border-box;
+                text-align: center;
+            }
+            a { 
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            .logo {
+                padding: 42px 0 14px;
+                font-family: Montserrat;
+                font-size: 2rem;
+                font-size: 4.9rem;
+                letter-spacing: -.66rem;
+                font-weight: 600;
+            }
+
+            .logo span:nth-child(1), .logo span:nth-child(4) {
+                color: #4284f4;
+            }
+            .logo span:nth-child(2), .logo span:nth-child(6) {
+                color: #ea4335;
+            }
+            .logo span:nth-child(3) {
+                color: #f7bc33;
+            }
+            .logo span:nth-child(5) {
+                color: #55a954;
+            }
+            
+            .searchbar {
+                border: 1px solid #ccc;
+                height: 2em;
+                width: 512px;
+                margin: 30px 0 -10px calc(50% - 362px);
+                display: inline-block;
+                position: relative;
+            }
+
+            .microphone {
+                background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAACrElEQVR42u2Xz2sTQRSAX8VSb1K8iNqKooJH2Ux6Ksn+iPQqxZMIehJB0do/IMhmQWsvHr2KSEGk0tSLIoWIYNUKij20F2/N7iaUZnYT0kYzzhMKs0HDJiTdLcwHDwKZSd63781LBiQSSW9JZdkhzfKm1Rz9mjZp/W9YdEU3vXv4HsQZ40FtNG36q5rls//Ej4tmbSS2T15Mvp3ExOPmEMQNbBtMMEyoljcFcQN7PqyAlqNfIG7gYQ0tYNIaxA1MrJPY3wImbUqBKAXSFv0tBSIVMOkvKRDtGKWN/T6FdqRAxFNoWwpEPIXqUqBT6ALU/UVgu8GW4GD3f6f9TRDYNJTDrk7YbtiqUumHwIYoUJuHERDAS0r4CvgFECgbY+cFAR7KT+g1POmCKFDNw6WggHc3fBtVb4CAoyauBgXIG+g1Xh5mRAGah6cggBd11fK/h7lOprIs0H6uRl6KAo5O7kOv4QmPiwJ4Jqqv4FiwCtXjvD2+tRmfK6kZ/ygI2HritK0rDVGgrClJ6DWMwYC/AGuCBMYcIC2V0CzvjmbRz3j3xUjn6CfeYreUJ2wQkGD75INPX1mFfsEFrrcIYCvdhC4paWQakxajpJMr0C9YFg54i7AsClRmh9/xnr0NHcInzZStk2aLwAcGMAD9pPIazvFKVDD5rdnhJeHLX5RTyRPQHpz5o66emMc9wdlPtvA8wF7Aq2BUHh1525qEo5JtR1WeOXpickO9cJIpyuD6xJmhYiZ5ytWSl3mlnuOaf+2zDaLDXmJrSgZ/MYVEugo+gSh+FkSBa4yd5Ul87DZ5XpFl/AyIEjzYjkau8WqshU2cr13HPbgX4gJOD97n465GZlyVvC9mSKloKI2iTnbwNT+gBX54H+IaXAtxJzE3ycSAFqSAFJACUkAikXD+AHj5/wx2o5osAAAAAElFTkSuQmCC) no-repeat -3px 0;
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                background-position: right;
+                right: 0;
+                background-size: contain;
+            }
+
+            .advanced-search {
+                font-family: Roboto;
+                font-size:  .7em;
+                width: 140px;
+                display: inline-block;
+                text-align: left;
+                position: relative;
+                top: 2px;
+            }
+
+            .advanced-search li {
+                font-family: Roboto;
+                list-style: none;
+                position: relative;
+                left: -25px;
+            }
+            .advanced-search li a{
+                text-decoration: none;
+            }
+
+            .buttons {
+                height: 25px;
+                width: 300px;
+                margin: auto;
+            }
+
+            .buttons button {
+                height: 30px;
+                width: 140px;
+                font-size: .9rem;
+                margin: 2px;
+            }
+
+            .footer-links {
+                font-size: .8rem;
+                margin-top: 110px;
+            }
+            .footer-links li {
+                list-style: none;
+                display: inline-block;
+                margin: 0 15px;
+            }
+            .footer-links li a {
+                text-decoration: none;
+                color: #213bcc;
+            }
+            
+            .copyright {
+                font-size: .63rem;
+                color: #797979;
+                margin-top: 19px;
+            }
+
+            .copyright a {
+                text-decoration: none;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="logo">
+            <span>G</span>
+            <span>o</span>
+            <span>o</span>
+            <span>g</span>
+            <span>l</span>
+            <span>e</span>
+        </div>
+        <div class="searchbar"><div class="microphone"></div></div>
+        <div class="advanced-search"><ul>
+            <li><a href="#">Advanced search</a></li>
+            <li><a href="#">Language tools</a></li>
+        </ul></div>
+        <div class="buttons"><button>Google Search</button><button>I'm Feeling Lucky</button></div>
+        <div class="footer-links">
+            <ul>
+                <a href="#"><li>Advertising Programs</li></a>
+                <a href="#"><li>Business Solutions</li></a>
+                <a href="#"><li>+Google</li></a>
+                <a href="#"><li>About Google</li></a>
+            </ul>
+        </div>
+        <div class="copyright"><span>&copy; 2018 &ndash; <a href="#">Privacy</a> &ndash; <a href="#">Terms</a></span></div>
+    </body>
+</html>
